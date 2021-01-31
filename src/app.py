@@ -42,7 +42,7 @@ app.secret_key = 'tes cobacoba'
 app.config.from_object('config')
 GOOGLE_CLIENT_ID = '613016628391-9e3v2n5on64j70sdr2kslsuhoc8a8fbv.apps.googleusercontent.com'
 GOOGLE_CLIENT_SECRET = 'BHQ_2O6Kia3Xk_yb4OuVRwVp'
-FN_BASE_URL = 'localhost:5000'
+FN_BASE_URL = 'https://micropoltekpos.heroku.app'
 CONF_URL = 'https://accounts.google.com/.well-known/openid-configuration'
 oauth = OAuth(app)
 oauth.register(
@@ -222,7 +222,4 @@ def dosen():
         return render_template ('dosen.html', data = data)
     else :
         return render_template('login.html')
-
-if __name__ == "__main__":
-	app.run()
 
