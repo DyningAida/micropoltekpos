@@ -1,1 +1,1 @@
-FN_BASE_URL = 'https://micropoltekpos.heroku.app'
+FN_BASE_URL = 'https://micropoltekpos.herokuapp.com'
